@@ -21,20 +21,20 @@ Comando para mover o certificado: sudo mv gcsi.local.pem gcsi.local-key.pem /etc
 
 Comando para editar o default do nginx: nano default
 
-server {
-    listen 443 ssl;
-    server_name localhost;
+    server {
+        listen 443 ssl;
+        server_name localhost;
 
-    ssl_certificate /etc/nginx/gcsi.local.pem;
-    ssl_certificate_key /etc/nginx/gcsi.local-key.pem;
+        ssl_certificate /etc/nginx/gcsi.local.pem;
+        ssl_certificate_key /etc/nginx/gcsi.local-key.pem;
 
-    root caminhoDoProjeto;
-    index index.html;
+        root caminhoDoProjeto;
+        index index.html;
 
-    location / {
-        try_files $uri $uri/ =404;
+        location / {
+            try_files $uri $uri/ =404;
+        }
     }
-}
 
 # Rodando o projeto:
 
