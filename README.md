@@ -7,7 +7,7 @@ Comando para instalar o mkcert: sudo apt install mkcert libnss3-tools -y
 
 # Criar a unidade certificadora:
 
-Comando para gerar os certficados: mkcert -install
+Comando para criar a unidade certificadora: mkcert -install
 
 # Gerando o certificado:
 
